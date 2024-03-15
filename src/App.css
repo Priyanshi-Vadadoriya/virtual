@@ -1,3 +1,10 @@
+@import url("./aseets/fonts/transfonter/stylesheet.css");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +41,623 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.heading-line{
+  width: 100px;
+  height: 2px;
+  background-color: #F0B161;
+}
+
+/* header section css start */
+.navbar-menu{
+  font-family: "Montserrat", sans-serif;
+}
+.select-option{
+  border: none;
+  outline: none;
+}
+.nav-item{
+  margin-right: 30px;
+}
+.nav-link{
+  font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.logo-img{
+  width: 150px;
+}
+.button{
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+
+  background: linear-gradient(89.59deg, #183B79 12.05%, #2D64C7 99.06%);
+  clip-path: polygon(
+    /* Top-left */
+    0% 0.5rem,
+    .5rem 0,
+    /* top-right */
+    100% 0,
+    100% calc(100% - .5rem),
+
+    /* bottom-right 1 */
+    calc(100% - .5rem) 100%,
+    /* bottom-right 2 */
+    0 100%);
+    & a{
+      text-decoration: none;
+      color: #ffffff;
+    }
+}
+/* header section css end */
+
+/* virtual technologies section css start */
+.virtual{
+  background: url(./aseets/images/about-us.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.virtual-technologies{
+  min-height: 100vh;
+  background: url(./aseets/images/virtual-technologies-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  .social-icons{
+    flex-wrap: wrap;
+
+    color: #C3CBD0;
+    
+    & i{
+      color: #F8F8F8;
+    }
+    .follow-us::after{
+      content: "";
+      height: 1px;
+      width: 50px;
+      background-color: #C3CBD0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 45%;
+      left: 37%;
+    }
+    
+    font-size: 18px;
+    transform: rotate(270deg);
+  }
+
+  .virtual-info{
+    color: #ffffff;
+    max-width: 600px;
+    & h1{
+      font-family: 'Venus Rising Rg';
+    }
+    & p{
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0em;
+      text-align: left;
+    } 
+    & hr {
+      max-width: 20%;
+      height: 2px;
+      background-color: #F3AE51;
+      margin-left: -15px;
+      opacity: 1;
+      border: 1px solid #F3AE51;
+  }
+  
+  }
+  .virtual-icon{
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #183B79;
+    width: 50px;
+    height: 60px;
+    position: absolute;
+    bottom: -3%;
+    left: 50%;
+    & i{
+      display: flex;
+      line-height: 55px;
+      font-size: 22px;
+      color: #ffffff;
+      justify-content: center;
+    }
+  }
+
+} 
+/* virtual technologies section css end */
+
+
+/* about-us section css start */
+.about-us-section{
+  background: url(./aseets/images/about-us.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  padding: 50px 0px;
+  min-height: auto; 
+  & img{
+    object-fit: contain;
+    width: 80%;
+  }
+  .about-info{
+    & h2{
+      font-family: 'Venus Rising Rg';
+    }
+    & p{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+    & hr {
+      max-width: 20%;
+      height: 2px;
+      background-color: #F3AE51;
+      margin-left: -15px;
+      opacity: 1;
+      border: 1px solid #F3AE51;
+  }
+  
+  }
+}
+/* about-us section css end */
+
+
+/* offer section css start */
+.offer-section{
+  margin: 50px 0px;
+  & h2{
+    text-align: center;
+    font-family: 'Venus Rising Rg';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+  }
+  .offer-card{
+    background-color: #0F0F0F;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 50%);
+  }
+  .offer-image{
+    & img{
+      object-fit: contain;
+      width: 80%;
+    }
+  }
+  .offer-card{
+    margin: 10px;
+    padding: 50px 20px 50px 20px;
+  }
+  .offer-card-info{
+    padding-top: 40px;
+    color: #ffffff;
+    & h5{
+      margin: 25px 0px;
+      font-family: 'Venus Rising Rg';
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: -0.05em;
+    }
+    & p,a{
+      font-family: Montserrat;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+    }
+   & a{
+    color: #ffffff;
+   }
+   .service{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+      background-color: #2B60BB;
+   }
+   .service-card-3{
+    background-color: #F29921;
+   }
+  }
+}
+/* offer section css end */
+
+
+/* choose-us section css start */
+
+.choose-us-section{
+  padding: 50px 0px;
+  min-height: auto;
+  background: url(./aseets/images/choose-us-bg-img.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  & img{
+    width: 50%;
+    object-fit: contain;
+  }
+
+}
+/* choose-us section css end */
+
+
+/* network-coverage section css start */
+.network-section{
+  padding: 48px 0px 150px 0px;
+  min-height: auto;
+  background: url('./aseets/images/network-section-bg.png') no-repeat;
+  background-size: 100% 100%;
+
+  .network-sec-heading{
+    & h2{
+      font-family: 'Venus Rising Rg';
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0.1em
+    }
+    & p{
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px;
+    }
+  }
+  .network-sec-img {
+    & img{
+      width: 60%;
+      object-fit: contain;
+    }
+  }
+  .network-types{
+    & img{
+      width: 70px;
+      object-fit: contain;
+    }
+    & p{
+      font-family: 'Venus Rising Rg';
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.1em;
+      margin: 20px 0px 0px 0px; 
+    }
+  }
+}
+/* network-coverage section css end */
+
+/* our-testimonais-section  css start */
+.our-testimonais-section{
+  padding-bottom: 50px;
+  & h2{
+    font-family: 'Venus Rising Rg';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  .testimonai-card-bg{
+    background-color: #193E75;
+    padding-bottom: 0.1px;
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 92% 86%, 0 86%, 0% 50%);
+  }
+  .card2-bg{
+    background-color: #F29925;
+  }
+  .testimonai-card{
+   
+    margin: 50px 0px 50px 0px;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 92% 100%, 0 100%, 0% 50%);
+    /* box-shadow: 0px 0px 4px 0px #000000; */
+    padding: 20px;
+    border-left: 2px  solid #D2D3D2;
+    border-right: 2px  solid #D2D3D2;
+    & i{
+      color: #F5C00B;
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    
+    .para{
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px;
+      color: #959595;
+      margin: 25px 0px;
+    }
+
+    .testimonai-name {
+      padding: 20px 0px 0px 20px;
+      & h6{
+        font-family: 'Venus Rising Rg';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0.1em;
+        color: #000000;
+      }
+      .dolor-sit{
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 17px;
+        color: #A1A1A1;
+      }
+    }
+  }
+  .swiper-pagination-bullet{
+    width: 3%;
+    border-radius: 25px;
+  }
+  
+}
+/* our-testimonais-section css end */
+
+
+/* our-partners-section  css start */
+.our-partners-section{ 
+  min-height: 80vh;
+  padding: 50px 0px;
+  background: url(./aseets/images/our-partners-bg.png) no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  & h2{
+    font-family: 'Venus Rising Rg';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-align: center;
+  }
+ .restore-img{
+  padding: 50px 0px 50px 0px;
+  margin: 20px; 
+  background: #ffffff;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+
+  & img{
+    width: 70%;
+  }
+ }
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    margin: 50px 0px 50px 0px;
+  }
+  .swiper-pagination-bullet{
+    width: 3%;
+    border-radius: 25px;
+    background-color: #ffffff;
+  }
+}
+/* our-partners-section  css end */
+
+
+/* ready-to-started-section css start */
+.ready-to-started-section{
+  background: url(./aseets/images/redy-to-start-shape.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 50px 0px;
+  min-height: auto; 
+  & img{
+    object-fit: contain;
+    width: 80%;
+  }
+  .ready-to-started-info{
+    & h2{
+      font-family: 'Venus Rising Rg';
+    }
+    & p{
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    }
+    & hr {
+      max-width: 20%;
+      height: 2px;
+      background-color: #F3AE51;
+      margin-left: -15px;
+      opacity: 1;
+      border: 1px solid #F3AE51;
+  }
+  
+  }
+}
+/* ready-to-started-section css end */
+
+/* latest-news section css start */
+.latest-news-section{
+  padding: 50px 0px 100px 0px;
+  background: url(./aseets/images/latest-news.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  & h2{
+    font-family: 'Venus Rising Rg';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  .latest-news-card-img{
+    width: 80%;
+    margin-inline: auto;
+    min-height: 35vh;
+    background: url(./aseets/images/latest-news-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .latest-news-card-info{
+    width: min(100% - 0px, 70%);
+    margin-inline: auto;
+    transform: translateY(-83px);
+    background: #FFFFFF;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 50%);
+    box-shadow: 0px 0px 4px 0px #00000026;
+
+    padding: 15px 20px;
+    & h5{
+      font-family: 'Venus Rising Rg';
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0.1em;
+      text-align: left;
+       
+    }
+    & p{
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      color: #8E8E8E;
+    }
+   & a{
+    font-family: 'Venus Rising Rg';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #8E8E8E;
+   }
+   .news{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+      background-color: #183E73;
+   }
+   .news-card-2{
+    background-color: #F29921;
+   }
+  }
+}
+/* latest-news section start */
+
+/* footer-section css start */
+.footer-section{
+  padding: 70px 0px 20px 0px;
+  background: url(./aseets/images/footer-bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+
+  & h6{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+  & hr{
+    width: 50%;
+    border: 1px solid #6C5139;
+    color: #6C5139;
+  }
+  & a{
+    text-decoration: none;
+    color: #D2D3D2;
+  }
+  .social-icons-section{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+  .social-icon{
+    margin-left: 8px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #183B79;
+    width: 35px;
+    height: 40px;
+
+    & i{
+      line-height: 40px;
+      color: #ffffff;
+    }
+  }
+  .copyright{
+    margin-top: 100px;
+    padding: 20px 0px 0px 0px;
+    border-top: 2px solid #100D10;
+    & p{
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      text-align: center;
+    }
+  }
+}
+/* footer-section css end */
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+  .virtual-technologies{
+    min-height: 80vh;
+    flex-wrap: wrap-reverse;
+    .social-icons{
+      transform: rotate(0deg);
+    }
+  }
+  .about-us-section{
+    background-size: cover;   
+  }
+}
+@media(max-width:540px){
+  .offer-section{
+    .offer-image{
+      & img{
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media(max-width:500px){
+  .virtual-technologies{
+    .virtual-icon{
+      bottom: -4%;
+      left: 45%;
+    }
   }
 }
