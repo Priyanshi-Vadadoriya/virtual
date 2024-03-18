@@ -16,18 +16,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
+import Card from "./Card";
+import TestimonailsCard from "./TestimonailsCard";
+import PartnersCard from "./PartnersCard";
+import NewsCard from "./NewsCard";
+
 const Home = () => {
   return (
     <div>
       {/* section header start */}
       <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container">
+        <nav className="navbar navbar-expand-lg bg-light">
+          <div className="container">
             <Link className="navbar-brand" href="#">
               <img src={logo} alt="" className="logo-img" />
             </Link>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -35,13 +40,13 @@ const Home = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div
               className="collapse navbar-collapse navbar-menu text-end"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link text-center" to="#">
                     About us
@@ -85,10 +90,10 @@ const Home = () => {
               <span className="follow-us">FOLLOW US </span>{" "}
             </div>
             <div className="ms-5 d-flex no-wrap gap-3">
-              <i class="fa-brands fa-youtube"></i>{" "}
-              <i class="fa-brands fa-instagram"></i>{" "}
-              <i class="fa-brands fa-twitter"></i>{" "}
-              <i class="fa-brands fa-facebook-f"></i>
+              <i className="fa-brands fa-youtube"></i>{" "}
+              <i className="fa-brands fa-instagram"></i>{" "}
+              <i className="fa-brands fa-twitter"></i>{" "}
+              <i className="fa-brands fa-facebook-f"></i>
             </div>
           </div>
           <div className="virtual-info">
@@ -105,7 +110,7 @@ const Home = () => {
             </button>
           </div>
           <div className="virtual-icon">
-            <i class="fa-solid fa-chevron-down"></i>
+            <i className="fa-solid fa-chevron-down"></i>
           </div>
         </div>
       </section>
@@ -154,103 +159,7 @@ const Home = () => {
       {/* section about-us end */}
 
       {/* section offer start */}
-      <section>
-        <div className="offer-section">
-          <div className="container">
-            <div className="row">
-              <div>
-                <h2>WHAT WE OFFER</h2>
-                <div className="heading-line m-auto my-3"></div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div className="offer-card">
-                  <div className="offer-image text-center">
-                    <img src={offer} alt="" />
-                  </div>
-                  <div className="offer-card-info">
-                    <span className="service px-2">SERVICE</span>
-                    <h5>
-                      INTEANET <br /> SEAVICES
-                    </h5>
-                    <p>
-                      Forem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum,efficitur neque.
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div className="offer-card">
-                  <div className="offer-image text-center">
-                    <img src={offer} alt="" />
-                  </div>
-                  <div className="offer-card-info">
-                    <span className="service px-2">SERVICE</span>
-                    <h5>
-                      INTEANET <br /> SEAVICES
-                    </h5>
-                    <p>
-                      Forem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum,efficitur neque.
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div className="offer-card">
-                  <div className="offer-image text-center">
-                    <img src={offer} alt="" />
-                  </div>
-                  <div className="offer-card-info">
-                    <span className="service px-2 service-card-3">SERVICE</span>
-                    <h5>
-                      INTEANET <br /> SEAVICES
-                    </h5>
-                    <p>
-                      Forem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum,efficitur neque.
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-3">
-                <div className="offer-card">
-                  <div className="offer-image text-center">
-                    <img src={offer} alt="" />
-                  </div>
-                  <div className="offer-card-info">
-                    <span className="service px-2">SERVICE</span>
-                    <h5>
-                      INTEANET <br /> SEAVICES
-                    </h5>
-                    <p>
-                      Forem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum,efficitur neque.
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="d-flex justify-content-center">
-              <button className="button mt-4">
-                <Link>VIEW ALL</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Card/>
       {/* section offer start */}
 
       {/* section choose-us start */}
@@ -315,302 +224,11 @@ const Home = () => {
       {/* section network-coverage end */}
 
       {/* our-testimonais-section start */}
-      <section>
-        <div className="our-testimonais-section">
-          <div className="container ">
-            <h2>OUR TESTIMONAIS</h2>
-            <div className="heading-line m-auto my-3"></div>
-            <div className="testimonai">
-              <Swiper
-                slidesPerView={1}
-                spaceBetween={30}
-                pagination={{
-                  clickable: true,
-                }}
-                breakpoints={{
-                    640: {
-                      slidesPerView: 1,
-                      spaceBetween: 20,
-                    },
-                    768: {
-                      slidesPerView: 1,
-                      spaceBetween: 40,
-                    },
-                    1024: {
-                      slidesPerView: 2,
-                      spaceBetween: 50,
-                    },
-                  }}
-                modules={[Pagination]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                <div className="testimonai-card-bg">
-                <div className="testimonai-card">
-                    <div>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p className="para">
-                      Rorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis. Class aptent taciti sociosqu ad litora torquent
-                      per conubia nostra, per inceptos himenaeos. Curabitur
-                      tempus urna at turpis condimentum lobortis. Ut commodo
-                      efficitur neque.
-                    </p>
-                    <div className="d-flex">
-                      <div className="testimonai-img">
-                        <img src={person} alt="" />
-                      </div>
-                      <div className="testimonai-name">
-                        <h6>ANGLE</h6>
-                        <p className="dolor-sit">Rorem ipsum dolor sit </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="testimonai-card-bg card2-bg">
-                <div className="testimonai-card">
-                    <div>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p className="para">
-                      Rorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis. Class aptent taciti sociosqu ad litora torquent
-                      per conubia nostra, per inceptos himenaeos. Curabitur
-                      tempus urna at turpis condimentum lobortis. Ut commodo
-                      efficitur neque.
-                    </p>
-                    <div className="d-flex">
-                      <div className="testimonai-img">
-                        <img src={person} alt="" />
-                      </div>
-                      <div className="testimonai-name">
-                        <h6>ANGLE</h6>
-                        <p className="dolor-sit">Rorem ipsum dolor sit </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                <div className="testimonai-card-bg">
-                <div className="testimonai-card">
-                    <div>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p className="para">
-                      Rorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc vulputate libero et velit interdum, ac aliquet odio
-                      mattis. Class aptent taciti sociosqu ad litora torquent
-                      per conubia nostra, per inceptos himenaeos. Curabitur
-                      tempus urna at turpis condimentum lobortis. Ut commodo
-                      efficitur neque.
-                    </p>
-                    <div className="d-flex">
-                      <div className="testimonai-img">
-                        <img src={person} alt="" />
-                      </div>
-                      <div className="testimonai-name">
-                        <h6>ANGLE</h6>
-                        <p className="dolor-sit">Rorem ipsum dolor sit </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </SwiperSlide>         
-              </Swiper>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TestimonailsCard/>
       {/* our-testimonais-section end */}
 
       {/* section our-partners start */}
-      <section>
-        <div className="our-partners-section">
-          <div>
-            <h2>OUR PARTNERS</h2>
-            <div className="heading-line m-auto my-3"></div>
-            <div className="container">
-              <div>
-                <Swiper
-                  spaceBetween={30}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="mySwiper"
-                >
-                  <SwiperSlide>
-                    <div className="container-fluid">
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="container-fluid">
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-
-                  <SwiperSlide>
-                    <div className="container-fluid">
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="cards">
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                        <div className="card-box text-center">
-                          <div className="restore-img">
-                            <img src={restore} alt="" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <PartnersCard/>
       {/* section our-partners end */}
 
       {/*  ready-to-started-section start */}
@@ -651,77 +269,7 @@ const Home = () => {
       {/*  ready-to-started-section end */}
 
       {/* latest-news section start */}
-      <section>
-        <div className="latest-news-section">
-          <h2>OUR LATEST NEWS</h2>
-          <div className="heading-line m-auto my-3"></div>
-
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                <div className="latest-news-card ">
-                  <div className="latest-news-card-img"></div>
-                  <div className="latest-news-card-info">
-                    <span className="news px-2">10-2-2023</span>
-                    <h5 className="mt-2">
-                      ESTABLISHED FACT <br /> THAT A READE WILL BE.
-                    </h5>
-                    <p>
-                      Gorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc .
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                <div className="latest-news-card">
-                  <div className="latest-news-card-img"></div>
-                  <div className="latest-news-card-info">
-                    <span className="news px-2 news-card-2">10-2-2023</span>
-                    <h5 className="mt-2">
-                      ESTABLISHED FACT <br /> THAT A READE WILL BE.
-                    </h5>
-                    <p>
-                      Gorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc .
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                <div className="latest-news-card">
-                  <div className="latest-news-card-img"></div>
-                  <div className="latest-news-card-info">
-                    <span className="news px-2">10-2-2023</span>
-                    <h5 className="mt-2">
-                      ESTABLISHED FACT <br /> THAT A READE WILL BE.
-                    </h5>
-                    <p>
-                      Gorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc .
-                    </p>
-                    <Link to="" className="read-more">
-                      READ MORE
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="d-flex justify-content-center">
-            <button className="button mt-4">
-              <Link>VIEW ALL</Link>
-            </button>
-          </div>
-        </div>
-      </section>
+      <NewsCard/>
       {/* latest-news section end */}
 
       {/* section footer start */}
@@ -733,16 +281,16 @@ const Home = () => {
                 <img src={footerlogo} alt="" />
                 <div className="social-icons-section">
                   <div className="social-icon">
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </div>
                   <div className="social-icon">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </div>
                   <div className="social-icon">
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </div>
                   <div className="social-icon">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                   </div>
                 </div>
               </div>
@@ -796,6 +344,9 @@ const Home = () => {
         </div>
       </section>
       {/* section footer end */}
+
+
+
     </div>
   );
 };

@@ -1,5 +1,5 @@
 @import url("./aseets/fonts/transfonter/stylesheet.css");
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,36 +44,35 @@
   }
 }
 
-.heading-line{
+.heading-line {
   width: 100px;
   height: 2px;
-  background-color: #F0B161;
+  background-color: #f0b161;
 }
 
 /* header section css start */
-.navbar-menu{
+.navbar-menu {
   font-family: "Montserrat", sans-serif;
 }
-.select-option{
+.select-option {
   border: none;
   outline: none;
 }
-.nav-item{
+.nav-item {
   margin-right: 30px;
 }
-.nav-link{
+.nav-link {
   font-family: Montserrat;
-font-size: 16px;
-font-weight: 600;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
 }
-.logo-img{
+.logo-img {
   width: 150px;
 }
-.button{
+.button {
   border: none;
   outline: none;
   padding: 10px 20px;
@@ -81,34 +80,35 @@ text-align: left;
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-
-  background: linear-gradient(89.59deg, #183B79 12.05%, #2D64C7 99.06%);
+  background: linear-gradient(89.59deg, #183b79 12.05%, #2d64c7 99.06%);
   clip-path: polygon(
-    /* Top-left */
-    0% 0.5rem,
-    .5rem 0,
-    /* top-right */
-    100% 0,
-    100% calc(100% - .5rem),
+    /* Top-left */ 0% 0.5rem,
+    0.5rem 0,
+    /* top-right */ 100% 0,
+    100% calc(100% - 0.5rem),
+    /* bottom-right 1 */ calc(100% - 0.5rem) 100%,
+    /* bottom-right 2 */ 0 100%
+    );
 
-    /* bottom-right 1 */
-    calc(100% - .5rem) 100%,
-    /* bottom-right 2 */
-    0 100%);
-    & a{
-      text-decoration: none;
-      color: #ffffff;
-    }
+  & a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  transition: all 8s ease-in;
+}
+.button:hover{
+  /* display: none; */
+  background: linear-gradient(89.59deg, #2d64c7 12.05%, #183b79 99.06%);
 }
 /* header section css end */
 
 /* virtual technologies section css start */
-.virtual{
+.virtual {
   background: url(./aseets/images/about-us.png) no-repeat;
   background-position: center;
   background-size: 100% 100%;
 }
-.virtual-technologies{
+.virtual-technologies {
   min-height: 100vh;
   background: url(./aseets/images/virtual-technologies-bg.png) no-repeat;
   background-position: center;
@@ -116,20 +116,20 @@ text-align: left;
   display: flex;
   align-items: center;
   position: relative;
-  
-  .social-icons{
+
+  .social-icons {
     flex-wrap: wrap;
 
-    color: #C3CBD0;
-    
-    & i{
-      color: #F8F8F8;
+    color: #c3cbd0;
+
+    & i {
+      color: #f8f8f8;
     }
-    .follow-us::after{
+    .follow-us::after {
       content: "";
       height: 1px;
       width: 50px;
-      background-color: #C3CBD0;
+      background-color: #c3cbd0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -137,44 +137,43 @@ text-align: left;
       top: 45%;
       left: 37%;
     }
-    
+
     font-size: 18px;
     transform: rotate(270deg);
   }
 
-  .virtual-info{
+  .virtual-info {
     color: #ffffff;
     max-width: 600px;
-    & h1{
-      font-family: 'Venus Rising Rg';
+    & h1 {
+      font-family: "Venus Rising Rg";
     }
-    & p{
+    & p {
       font-family: Montserrat;
       font-size: 20px;
       font-weight: 500;
       line-height: 28px;
       letter-spacing: 0em;
       text-align: left;
-    } 
+    }
     & hr {
       max-width: 20%;
       height: 2px;
-      background-color: #F3AE51;
+      background-color: #f3ae51;
       margin-left: -15px;
       opacity: 1;
-      border: 1px solid #F3AE51;
+      border: 1px solid #f3ae51;
+    }
   }
-  
-  }
-  .virtual-icon{
+  .virtual-icon {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    background-color: #183B79;
+    background-color: #183b79;
     width: 50px;
     height: 60px;
     position: absolute;
     bottom: -3%;
     left: 50%;
-    & i{
+    & i {
       display: flex;
       line-height: 55px;
       font-size: 22px;
@@ -182,142 +181,136 @@ text-align: left;
       justify-content: center;
     }
   }
-
-} 
+}
 /* virtual technologies section css end */
 
-
 /* about-us section css start */
-.about-us-section{
+.about-us-section {
   background: url(./aseets/images/about-us.png) no-repeat;
   background-position: center;
   background-size: 100% 100%;
   padding: 50px 0px;
-  min-height: auto; 
-  & img{
+  min-height: auto;
+  & img {
     object-fit: contain;
     width: 80%;
   }
-  .about-info{
-    & h2{
-      font-family: 'Venus Rising Rg';
+  .about-info {
+    & h2 {
+      font-family: "Venus Rising Rg";
     }
-    & p{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
+    & p {
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
     }
     & hr {
       max-width: 20%;
       height: 2px;
-      background-color: #F3AE51;
+      background-color: #f3ae51;
       margin-left: -15px;
       opacity: 1;
-      border: 1px solid #F3AE51;
-  }
-  
+      border: 1px solid #f3ae51;
+    }
   }
 }
 /* about-us section css end */
 
-
 /* offer section css start */
-.offer-section{
+.offer-section {
   margin: 50px 0px;
-  & h2{
+  & h2 {
     text-align: center;
-    font-family: 'Venus Rising Rg';
+    font-family: "Venus Rising Rg";
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0.1em;
   }
-  .offer-card{
-    background-color: #0F0F0F;
+  .offer-card {
+    background-color: #0f0f0f;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 50%);
   }
-  .offer-image{
-    & img{
+  .offer-image {
+    & img {
       object-fit: contain;
       width: 80%;
     }
   }
-  .offer-card{
+  .offer-card {
     margin: 10px;
     padding: 50px 20px 50px 20px;
   }
-  .offer-card-info{
+  .offer-card-info {
     padding-top: 40px;
     color: #ffffff;
-    & h5{
+    & h5 {
       margin: 25px 0px;
-      font-family: 'Venus Rising Rg';
+      font-family: "Venus Rising Rg";
       font-size: 16px;
       font-weight: 400;
       line-height: 19px;
       letter-spacing: -0.05em;
     }
-    & p,a{
+    & p,
+    a {
       font-family: Montserrat;
       font-size: 12px;
       font-weight: 500;
       line-height: 17px;
     }
-   & a{
-    color: #ffffff;
-   }
-   .service{
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: -0.01em;
-      background-color: #2B60BB;
-   }
-   .service-card-3{
-    background-color: #F29921;
-   }
+    & a {
+      color: #ffffff;
+    }
+    .service {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.01em;
+      background-color: #2b60bb;
+    }
+    .service-card-3 {
+      background-color: #f29921;
+    }
   }
 }
 /* offer section css end */
 
-
 /* choose-us section css start */
 
-.choose-us-section{
+.choose-us-section {
   padding: 50px 0px;
   min-height: auto;
   background: url(./aseets/images/choose-us-bg-img.png) no-repeat;
   background-position: center;
   background-size: cover;
-  & img{
+  & img {
     width: 50%;
     object-fit: contain;
   }
-
 }
 /* choose-us section css end */
 
-
 /* network-coverage section css start */
-.network-section{
+.network-section {
   padding: 48px 0px 150px 0px;
   min-height: auto;
-  background: url('./aseets/images/network-section-bg.png') no-repeat;
+  background: url("./aseets/images/network-section-bg.png") no-repeat;
   background-size: 100% 100%;
 
-  .network-sec-heading{
-    & h2{
-      font-family: 'Venus Rising Rg';
+  .network-sec-heading {
+    & h2 {
+      font-family: "Venus Rising Rg";
       font-size: 32px;
       font-weight: 400;
       line-height: 38px;
-      letter-spacing: 0.1em
+      letter-spacing: 0.1em;
     }
-    & p{
+    & p {
       font-family: Montserrat;
       font-size: 15px;
       font-weight: 500;
@@ -325,63 +318,62 @@ text-align: left;
     }
   }
   .network-sec-img {
-    & img{
+    & img {
       width: 60%;
       object-fit: contain;
     }
   }
-  .network-types{
-    & img{
+  .network-types {
+    & img {
       width: 70px;
       object-fit: contain;
     }
-    & p{
-      font-family: 'Venus Rising Rg';
+    & p {
+      font-family: "Venus Rising Rg";
       font-size: 18px;
       font-weight: 400;
       line-height: 22px;
       letter-spacing: 0.1em;
-      margin: 20px 0px 0px 0px; 
+      margin: 20px 0px 0px 0px;
     }
   }
 }
 /* network-coverage section css end */
 
 /* our-testimonais-section  css start */
-.our-testimonais-section{
+.our-testimonais-section {
   padding-bottom: 50px;
-  & h2{
-    font-family: 'Venus Rising Rg';
+  & h2 {
+    font-family: "Venus Rising Rg";
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0.1em;
     text-align: center;
   }
-  .testimonai-card-bg{
-    background-color: #193E75;
+  .testimonai-card-bg {
+    background-color: #193e75;
     padding-bottom: 0.1px;
     clip-path: polygon(0 0, 100% 0, 100% 72%, 92% 86%, 0 86%, 0% 50%);
   }
-  .card2-bg{
-    background-color: #F29925;
+  .card2-bg {
+    background-color: #f29925;
   }
-  .testimonai-card{
-   
+  .testimonai-card {
     margin: 50px 0px 50px 0px;
     background-color: #ffffff;
     clip-path: polygon(0 0, 100% 0, 100% 83%, 92% 100%, 0 100%, 0% 50%);
     /* box-shadow: 0px 0px 4px 0px #000000; */
     padding: 20px;
-    border-left: 2px  solid #D2D3D2;
-    border-right: 2px  solid #D2D3D2;
-    & i{
-      color: #F5C00B;
+    border-left: 2px solid #d2d3d2;
+    border-right: 2px solid #d2d3d2;
+    & i {
+      color: #f5c00b;
       margin-right: 10px;
       font-size: 20px;
     }
-    
-    .para{
+
+    .para {
       font-family: Montserrat;
       font-size: 15px;
       font-weight: 500;
@@ -392,42 +384,40 @@ text-align: left;
 
     .testimonai-name {
       padding: 20px 0px 0px 20px;
-      & h6{
-        font-family: 'Venus Rising Rg';
+      & h6 {
+        font-family: "Venus Rising Rg";
         font-size: 14px;
         font-weight: 400;
         line-height: 17px;
         letter-spacing: 0.1em;
         color: #000000;
       }
-      .dolor-sit{
+      .dolor-sit {
         font-family: Montserrat;
         font-size: 12px;
         font-weight: 500;
         line-height: 17px;
-        color: #A1A1A1;
+        color: #a1a1a1;
       }
     }
   }
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 3%;
     border-radius: 25px;
   }
-  
 }
 /* our-testimonais-section css end */
 
-
 /* our-partners-section  css start */
-.our-partners-section{ 
+.our-partners-section {
   min-height: 80vh;
   padding: 50px 0px;
   background: url(./aseets/images/our-partners-bg.png) no-repeat;
   background-position: center;
   background-size: 100% 100%;
 
-  & h2{
-    font-family: 'Venus Rising Rg';
+  & h2 {
+    font-family: "Venus Rising Rg";
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
@@ -435,80 +425,82 @@ text-align: left;
     color: #ffffff;
     text-align: center;
   }
- .restore-img{
-  padding: 50px 0px 50px 0px;
-  margin: 20px; 
-  background: #ffffff;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  .restore-img {
+    padding: 50px 0px 50px 0px;
+    margin: 5px;
+    background: #ffffff;
+    clip-path: polygon(9% 0, 91% 0, 100% 10%, 100% 88%, 90% 100%, 10% 100%, 0 89%, 0 13%);
 
-  & img{
-    width: 70%;
+
+    & img {
+      width: 70%;
+    }
   }
- }
-  .cards{
+  .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    margin: 50px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
   }
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     width: 3%;
     border-radius: 25px;
     background-color: #ffffff;
   }
+  .swiper{
+    padding: 80px 0px;
+  }
 }
 /* our-partners-section  css end */
 
-
 /* ready-to-started-section css start */
-.ready-to-started-section{
+.ready-to-started-section {
   background: url(./aseets/images/redy-to-start-shape.png);
   background-repeat: no-repeat;
   background-position: right;
   padding: 50px 0px;
-  min-height: auto; 
-  & img{
+  min-height: auto;
+  & img {
     object-fit: contain;
     width: 80%;
   }
-  .ready-to-started-info{
-    & h2{
-      font-family: 'Venus Rising Rg';
+  .ready-to-started-info {
+    & h2 {
+      font-family: "Venus Rising Rg";
     }
-    & p{
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 21px;
+    & p {
+      font-family: Montserrat;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 21px;
     }
     & hr {
       max-width: 20%;
       height: 2px;
-      background-color: #F3AE51;
+      background-color: #f3ae51;
       margin-left: -15px;
       opacity: 1;
-      border: 1px solid #F3AE51;
-  }
-  
+      border: 1px solid #f3ae51;
+    }
   }
 }
 /* ready-to-started-section css end */
 
 /* latest-news section css start */
-.latest-news-section{
+.latest-news-section {
   padding: 50px 0px 100px 0px;
   background: url(./aseets/images/latest-news.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  & h2{
-    font-family: 'Venus Rising Rg';
+  & h2 {
+    font-family: "Venus Rising Rg";
     font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0.1em;
     text-align: center;
   }
-  .latest-news-card-img{
+  .latest-news-card-img {
     width: 80%;
     margin-inline: auto;
     min-height: 35vh;
@@ -517,59 +509,58 @@ text-align: left;
     background-position: center;
     background-size: 100% 100%;
   }
-  .latest-news-card-info{
+  .latest-news-card-info {
     width: min(100% - 0px, 70%);
     margin-inline: auto;
     transform: translateY(-83px);
-    background: #FFFFFF;
+    background: #ffffff;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0% 50%);
     box-shadow: 0px 0px 4px 0px #00000026;
 
     padding: 15px 20px;
-    & h5{
-      font-family: 'Venus Rising Rg';
+    & h5 {
+      font-family: "Venus Rising Rg";
       font-size: 14px;
       font-weight: 400;
       line-height: 17px;
       letter-spacing: 0.1em;
       text-align: left;
-       
     }
-    & p{
+    & p {
       font-family: Montserrat;
       font-size: 14px;
       font-weight: 500;
       line-height: 17px;
-      color: #8E8E8E;
+      color: #8e8e8e;
     }
-   & a{
-    font-family: 'Venus Rising Rg';
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 12px;
-    letter-spacing: 0.1em;
-    color: #000000;
-    text-decoration: none;
-    border-bottom: 1px solid #8E8E8E;
-   }
-   .news{
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 17px;
-    letter-spacing: -0.01em;
-      background-color: #183E73;
-   }
-   .news-card-2{
-    background-color: #F29921;
-   }
+    & a {
+      font-family: "Venus Rising Rg";
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0.1em;
+      color: #000000;
+      text-decoration: none;
+      border-bottom: 1px solid #8e8e8e;
+    }
+    .news {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.01em;
+      background-color: #183e73;
+    }
+    .news-card-2 {
+      background-color: #f29921;
+    }
   }
 }
 /* latest-news section start */
 
 /* footer-section css start */
-.footer-section{
+.footer-section {
   padding: 70px 0px 20px 0px;
   background: url(./aseets/images/footer-bg.png) no-repeat;
   background-size: 100% 100%;
@@ -577,43 +568,49 @@ text-align: left;
   background-repeat: no-repeat;
   color: #ffffff;
 
-  & h6{
+  & h6 {
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     line-height: 17px;
   }
-  & hr{
+  & hr {
     width: 50%;
-    border: 1px solid #6C5139;
-    color: #6C5139;
+    border: 1px solid #6c5139;
+    color: #6c5139;
   }
-  & a{
+  & a {
     text-decoration: none;
-    color: #D2D3D2;
+    color: #d2d3d2;
   }
-  .social-icons-section{
+  .social-icons-section {
     display: flex;
     justify-content: center;
     margin: 20px 0px;
   }
-  .social-icon{
+  .social-icon {
     margin-left: 8px;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    background-color: #183B79;
+    background-color: #183b79;
     width: 35px;
     height: 40px;
 
-    & i{
+    & i {
       line-height: 40px;
       color: #ffffff;
     }
   }
-  .copyright{
+  .social-icon:hover{
+    background-color: #ffffff;
+    & i {
+      color: #183b79;
+    }
+  }
+  .copyright {
     margin-top: 100px;
     padding: 20px 0px 0px 0px;
-    border-top: 2px solid #100D10;
-    & p{
+    border-top: 2px solid #100d10;
+    & p {
       font-family: Montserrat;
       font-size: 14px;
       font-weight: 400;
@@ -624,38 +621,31 @@ text-align: left;
 }
 /* footer-section css end */
 
-
-
-
-
-
-
-
-@media(max-width:992px){
-  .virtual-technologies{
+@media (max-width: 992px) {
+  .virtual-technologies {
     min-height: 80vh;
     flex-wrap: wrap-reverse;
-    .social-icons{
+    .social-icons {
       transform: rotate(0deg);
     }
   }
-  .about-us-section{
-    background-size: cover;   
+  .about-us-section {
+    background-size: cover;
   }
 }
-@media(max-width:540px){
-  .offer-section{
-    .offer-image{
-      & img{
+@media (max-width: 540px) {
+  .offer-section {
+    .offer-image {
+      & img {
         width: 60%;
       }
     }
   }
 }
 
-@media(max-width:500px){
-  .virtual-technologies{
-    .virtual-icon{
+@media (max-width: 500px) {
+  .virtual-technologies {
+    .virtual-icon {
       bottom: -4%;
       left: 45%;
     }

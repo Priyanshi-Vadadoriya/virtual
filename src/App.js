@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './views/Home/Home';
-import Demo from './views/Home/Demo';
 
 function App() {
   return (
