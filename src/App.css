@@ -14,7 +14,6 @@
 
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-
 .navbar-menu {
   font-family: "Montserrat", sans-serif;
 }
@@ -53,7 +52,6 @@
     /* bottom-right 1 */ calc(100% - 0.5rem) 100%,
     /* bottom-right 2 */ 0 100%
   );
-
   & a {
     text-decoration: none;
     color: #ffffff;
@@ -244,7 +242,6 @@
 /* offer section css end */
 
 /* choose-us section css start */
-
 .choose-us-section {
   padding: 50px 0px;
   min-height: auto;

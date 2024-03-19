@@ -15,9 +15,10 @@ const Navbar = () => {
       }
     })
   })
+  
   return (
     <div>
-      
+      {/* section header start */}
       <div>
         <nav className={`navbar navbar-expand-lg bg-light  ${fixnavbar ? "navbar-fixed" : ""} `}>
           <div className="container">
@@ -73,6 +74,7 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
+      {/* section header end */}
     </div>
   )
 }

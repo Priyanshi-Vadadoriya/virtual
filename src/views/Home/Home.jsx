@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-
-
 import about from "../../aseets/images/about-us-img.png";
 import chooseus from "../../aseets/images/choose-img.png";
 import network from "../../aseets/images/network-map-img.png";
@@ -20,8 +18,6 @@ import Footer from "../../layouts/Footer/Footer";
 const Home = () => {
   return (
     <div>
-      {/* section header start */}
-      {/* section header end */}
 
       {/* section virtual technologies start */}
       <section className="virtual">
