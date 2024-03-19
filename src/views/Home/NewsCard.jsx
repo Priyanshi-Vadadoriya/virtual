@@ -1,37 +1,58 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Heading from '../../layouts/Heading/Heading';
+import newsimage from '../../aseets/images/news-bg2.png';
+import newsimage2 from '../../aseets/images/news-bg.png';
 
+const news = [
+  
+  {
+    "id": 1,
+    "name": "ESTABLISHED FACT THAT A READE WILL BE.",
+    "detail": "Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.",
+    "date" : "10-02-2023",
+    "image":newsimage2
+},
+{
+    "id": 2,
+    "name": "ESTABLISHED FACT THAT A READE WILL BE.",
+    "detail": "Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.",
+    "date" : "2023-02-10",
+    "color":"#F29921",
+    "image":newsimage
+},
+{
+    "id": 3,
+    "name": "ESTABLISHED FACT THAT A READE WILL BE.",
+    "detail": "Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.",
+    "date" : "2023-02-10",
+    "image":newsimage2
+}
 
+]
 const NewsCard = () => {
 
-    const [data,Setdata] = useState("");
+    const [data,Setdata] = useState(news);
 
-    useEffect(() => {
-        fetch("http://localhost:3005/news")
-        .then((res) => {return res.json()})
-        .then((data) => Setdata(data))
-        .catch((err) => console.log(err));
-      });
 
   return (
     <div>
       
       <section>
         <div className="latest-news-section">
-          <h2>OUR LATEST NEWS</h2>
-          <div className="heading-line m-auto my-3"></div>
+          <Heading title="OUR LATEST NEWS"/>
 
           <div className="container">
             <div className="row">
             {
-            data && data.map((item,i)=>(
+            data.map((item,i)=>(
                 <div className="col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <div className="latest-news-card ">
                   <div className="latest-news-card-img"></div>
-                  <div className="latest-news-card-info">
-                    <span className="news px-2">{item.date}</span>
+                  <div className="latest-news-card-info " style={{backgroundImage: `url(${item.image})`}}>
+                    <span className="news px-2" style={{background:item.color}}>{item.date}</span>
                     <h5 className="mt-2">
-                      {item.title}
+                      {item.name}
                     </h5>
                     <p>
                       {item.detail}

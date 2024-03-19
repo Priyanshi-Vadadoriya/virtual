@@ -1,85 +1,26 @@
 import { Link } from "react-router-dom";
-import logo from "../../aseets/images/logo.png";
-import flag from "../../aseets/images/flag.png";
+
+
 import about from "../../aseets/images/about-us-img.png";
 import chooseus from "../../aseets/images/choose-img.png";
-import offer from "../../aseets/images/offer-img.png";
 import network from "../../aseets/images/network-map-img.png";
 import network1 from "../../aseets/images/network-type-img1.png";
 import network2 from "../../aseets/images/network-type-img2.png";
 import network3 from "../../aseets/images/network-type-img3.png";
 import started from "../../aseets/images/ready-to-get-img.png";
-import footerlogo from "../../aseets/images/footer-logo.png";
-import person from "../../aseets/images/person-img.png";
-import restore from "../../aseets/images/restore-logo.png";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
 import "swiper/css";
 import Card from "./Card";
 import TestimonailsCard from "./TestimonailsCard";
 import PartnersCard from "./PartnersCard";
 import NewsCard from "./NewsCard";
+import Heading from "../../layouts/Heading/Heading";
+import Footer from "../../layouts/Footer/Footer";
 
 const Home = () => {
   return (
     <div>
       {/* section header start */}
-      <div>
-        <nav className="navbar navbar-expand-lg bg-light">
-          <div className="container">
-            <Link className="navbar-brand" href="#">
-              <img src={logo} alt="" className="logo-img" />
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse navbar-menu text-end"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <Link className="nav-link text-center" to="#">
-                    About us
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-center" to="#">
-                    Our Service
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-center" to="#">
-                    News
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-center" to="#">
-                    <img src={flag} alt="" width={20} />
-                    <select className="select-option">
-                      <option> EN</option>
-                    </select>
-                  </Link>
-                </li>
-              </ul>
-              <div className="d-flex justify-content-center">
-                <button className="button">
-                  <Link>CONTACT US</Link>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
       {/* section header end */}
 
       {/* section virtual technologies start */}
@@ -121,10 +62,10 @@ const Home = () => {
         <div className="about-us-section">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
                 <img src={about} alt="" />
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <div className="about-info">
                   <h2 className="display-6">
                     GET TO KNOW <br></br> ABOUT VTS
@@ -159,7 +100,7 @@ const Home = () => {
       {/* section about-us end */}
 
       {/* section offer start */}
-      <Card/>
+      <Card />
       {/* section offer start */}
 
       {/* section choose-us start */}
@@ -175,8 +116,7 @@ const Home = () => {
         <div className="network-section text-center">
           <div className="container">
             <div className="network-sec-heading">
-              <h2>NETWORK COVERAGE</h2>
-              <div className="heading-line m-auto my-3"></div>
+              <Heading title="NETWORK COVERAGE" />
               <p>
                 Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet <br />
@@ -224,11 +164,11 @@ const Home = () => {
       {/* section network-coverage end */}
 
       {/* our-testimonais-section start */}
-      <TestimonailsCard/>
+      <TestimonailsCard />
       {/* our-testimonais-section end */}
 
       {/* section our-partners start */}
-      <PartnersCard/>
+      <PartnersCard />
       {/* section our-partners end */}
 
       {/*  ready-to-started-section start */}
@@ -236,7 +176,7 @@ const Home = () => {
         <div className="ready-to-started-section">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                 <div className="ready-to-started-info">
                   <h2 className="display-6">
                     READY TO <br></br> GET STARTED?
@@ -259,7 +199,7 @@ const Home = () => {
                   </button>
                 </div>
               </div>
-              <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
                 <img src={started} alt="" />
               </div>
             </div>
@@ -269,84 +209,12 @@ const Home = () => {
       {/*  ready-to-started-section end */}
 
       {/* latest-news section start */}
-      <NewsCard/>
+      <NewsCard />
       {/* latest-news section end */}
 
       {/* section footer start */}
-      <section>
-        <div className="footer-section">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center py-3">
-                <img src={footerlogo} alt="" />
-                <div className="social-icons-section">
-                  <div className="social-icon">
-                    <i className="fa-brands fa-facebook-f"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i className="fa-brands fa-instagram"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i className="fa-brands fa-twitter"></i>
-                  </div>
-                  <div className="social-icon">
-                    <i className="fa-brands fa-youtube"></i>
-                  </div>
-                </div>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center py-3">
-                <h6>OUR SERVICES</h6>
-                <hr className="m-auto my-3"></hr>
-                <p>
-                  <Link>Strategy Activation</Link>
-                </p>
-                <p>
-                  <Link>Value Chain</Link>
-                </p>
-                <p>
-                  <Link>Technology</Link>
-                </p>
-                <p>
-                  <Link>Follow up</Link>
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center py-3">
-                <h6>OUR SERVICES</h6>
-                <hr className="m-auto my-3"></hr>
-                <p>
-                  <Link>Research </Link>
-                </p>
-                <p>
-                  <Link>Blog</Link>
-                </p>
-                <p>
-                  <Link>living labs </Link>
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-3 col-xl-3 text-center py-3">
-                <h6>OUR SERVICES</h6>
-                <hr className="m-auto my-3"></hr>
-                <p>
-                  <Link>Greenville, Sc</Link>
-                </p>
-                <p>
-                  <Link>+1-833-722-6338</Link>
-                </p>
-                <p>
-                  <Link>EMAIL US</Link>
-                </p>
-              </div>
-            </div>
-            <div className="copyright">
-              <p>Copyright © 2022. 101 Solutions, LLC. All Rights Reserved.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
       {/* section footer end */}
-
-
-
     </div>
   );
 };

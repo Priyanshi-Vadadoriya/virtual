@@ -5,6 +5,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import restore from "../../aseets/images/restore-logo.png";
 import restore2 from "../../aseets/images/restore2-logo.png";
+import Heading from "../../layouts/Heading/Heading";
 
 const initialState = [
   {
@@ -42,8 +43,7 @@ const PartnersCard = () => {
       <section>
         <div className="our-partners-section">
           <div>
-            <h2>OUR PARTNERS</h2>
-            <div className="heading-line m-auto my-3"></div>
+            <Heading title="OUR PARTNERS"/>
             <div className="container">
               <div>
                 <Swiper

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import offer from "../../aseets/images/offer-img.png";
+import Heading from "../../layouts/Heading/Heading";
 
 
 const initialState = [
@@ -45,10 +46,7 @@ const Card = () => {
         <div className="offer-section">
             <div className="container">
             <div className="row">
-              <div>
-                <h2>WHAT WE OFFER</h2>
-                <div className="heading-line m-auto my-3"></div>
-              </div>
+             <Heading title="WHAT WE OFFER"/>
               {
                 data.map((item,i)=>(
                     <div className="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-3" key={i}>
